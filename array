@@ -1,0 +1,12 @@
+declare -a oddnum=()
+for((i=0;i<=100;i++))
+do
+            res=$(($i%2))
+	if [ $res -ne 0 ]
+	then
+	oddnum+=( $i )
+fi
+done
+echo "odd in array perticulars " ${oddnum[*]}
+
+
